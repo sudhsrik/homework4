@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#logo {
+    animation: fadeIn 3s;
+}
+
+@media screen and (min-width: 500px) {
+  /* Ask about this, how to get a stacked layout? */
+  #gallery img {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  header img {
+    width: 100%;
+    height: auto;
+  }
+  .nav_links{
+    justify-items: center;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header img {
+    width: 400px;
+    height: auto;
+    justify-items: flex-start;
+  }
+  /* Ask about this */
+  .nav_links {
+    justify-items: flex-end;
+    flex-direction: row;
+  }
+  .card {
+    width: 300px;
+    flex-flow: row wrap;
+  }
+  #gallery img {
+    width: 300px;
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (prefers-reduced-motion) {
+  header img {
+    animation: none;
+  }
+}
