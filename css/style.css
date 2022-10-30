@@ -3,7 +3,16 @@ body {
 }
 
 #logo {
-    animation: fadeIn 3s;
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -35,7 +44,7 @@ body {
   }
   /* Ask about this */
   .nav_links {
-    justify-items: flex-end;
+    align-content: flex-end;
     flex-direction: row;
   }
   .card {
