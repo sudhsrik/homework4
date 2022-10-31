@@ -16,7 +16,6 @@ body {
 }
 
 @media screen and (min-width: 500px) {
-  /* Ask about this, how to get a stacked layout? */
   #gallery img {
     width: 100%;
     flex-direction: column;
@@ -42,7 +41,6 @@ body {
     height: auto;
     justify-items: flex-start;
   }
-  /* Ask about this */
   .nav_links {
     align-content: flex-end;
     flex-direction: row;
